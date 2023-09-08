@@ -12,6 +12,7 @@
 
 html{
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 body {
@@ -55,7 +56,6 @@ a{
     font-size: 1.5rem;
     display: block;
     padding:1rem;
-
 }
 
 .nav-list a:hover{    
@@ -77,43 +77,86 @@ a{
     text-align: center;
 }
 
-.welcome-section h3{
+.welcome-section > h3{
     color: var(--main-red);
+    font-weight: 200;
+    font-size: 2.5rem;
+    font-style: italic;
 }
 
 .projects-section{    
     text-align: center;
+    background-color: var(--main-blue);
+}
+
+.project-header{
+    display: inline-block;
+    border-bottom: 2px solid white ;
+    margin: 5rem auto;
+}
+
+.project-header h1{
+    font-size: 2.5rem;
 }
 
 .projects-presentation{    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
-    width: 80%;
-    margin: 20px auto;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 17px;
+   justify-content: center;
+   align-items: center;  
+   width: 100%;    
+   max-width: 1300;   
 }
 
 .project-tile{
-    display: flex;
-    flex-direction: column;
-   border: 1px solid black;
-   width: 31.3%;
-   height: 50vh;
-}
-
-.project-tile p{
-    background-color: var(--main-gray);    
-    height: 10%;
-    font-size: 1rem;
-    vertical-align: middle;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 500px;  
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    border-radius: 2px;
 }
 
 .project-img{
-    width: 100%;
+    width: 500px;
     height: 90%;
+    object-fit: cover;
+    display: block;
 }
+
+.project-title{   
+    background-color: var(--main-gray);
+    height: 7%;
+    font-size: 1.5rem;
+    text-align: center; /* Horizontally center the text */
+    padding: 1.5% 0; /* Add padding for spacing */
+}
+
+.btn{
+    display: inline-block;
+    background-color: var(--main-gray);
+    padding: 5px;
+    margin: 80px auto;
+    font-size: 1.5rem;
+}
+
+.btn:hover{
+    background-color: var(--main-red);
+}
+
+.btn:hover > i {
+    transform: translateX(2px);
+  }
+
+.code{
+    color: var(--main-gray);
+    transition: color 0.3s ease-out;
+    font-size: 1.4rem;
+}
+
+.project-tile:hover .code {
+    color: #ff7f50;
+ }
+
+
 
