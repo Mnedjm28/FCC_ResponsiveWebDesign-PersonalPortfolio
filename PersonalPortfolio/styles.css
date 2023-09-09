@@ -13,6 +13,7 @@
 html{
     font-size: 16px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -64,11 +65,11 @@ a{
 
 .welcome-section{
     height: 100vh;
-    width: 100%s;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 
@@ -100,7 +101,6 @@ a{
 }
 
 .projects-presentation{    
-   margin: 0 auto;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
@@ -159,7 +159,7 @@ a{
  }
 
  .contact-section{
-    height: 80vh;
+    height: 90vh;
     background-color: var(--main-gray);
     align-items: center;
     text-align: center;
@@ -205,5 +205,16 @@ a{
     margin: 2px;
  }
 
-
-
+ .footer{
+    /* height: 10vh; */
+    border-top: 3px solid var(--main-red);
+    background: var(--main-gray);
+    
+ }
+ .footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    font-size: 1.1rem;    
+    padding: 30px;
+ }
