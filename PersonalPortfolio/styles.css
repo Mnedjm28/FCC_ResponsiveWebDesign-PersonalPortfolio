@@ -158,5 +158,52 @@ a{
     color: #ff7f50;
  }
 
+ .contact-section{
+    height: 80vh;
+    background-color: var(--main-gray);
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+ }
+
+ .contact-section > h1{
+    font-size: 4.2rem;
+ }
+
+ .contact-section > p{
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-style: oblique;
+ }
+
+ .social-media{
+    width: 80vw;
+    margin-top: 80px;
+    font-size: 1.5rem;
+ }
+
+ .social-media > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+ }
+
+ .contact-details > i{
+    padding-right: 5px;
+ }
+
+ .contact-details{
+    transition: margin 0.3s ease-out;
+ }
+
+ .contact-details:hover{
+    margin: 2px;
+ }
+
 
 
